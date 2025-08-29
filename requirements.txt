@@ -3,3 +3,4 @@ langchain_community==0.3.29
 langchain_openai==0.3.32
 python-dotenv==1.1.1
 streamlit==1.45.1
+unstructured==0.14.9
