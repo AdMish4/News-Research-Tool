@@ -5,3 +5,4 @@ python-dotenv==1.1.1
 streamlit==1.45.1
 python-magic==0.4.27
 unstructured==0.18.14
+faiss-cpu==1.12.0
