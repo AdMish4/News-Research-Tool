@@ -9,9 +9,9 @@ from langchain_community.vectorstores import FAISS
 from langchain.globals import set_debug
 
 from dotenv import load_dotenv
-load_dotenv()  # Importing the llm api key
+# load_dotenv()  # Importing the llm api key
 # Load secrets from Streamlit environment
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 st.title("News Research Tool 💡")
 st.sidebar.title("News Article URLs")
