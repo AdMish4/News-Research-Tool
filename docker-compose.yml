@@ -1,0 +1,8 @@
+version: '3.8'
+services:
+  news-tool:
+    image: news-research-tool
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
