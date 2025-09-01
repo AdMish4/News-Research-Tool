@@ -34,7 +34,7 @@ embeddings = OpenAIEmbeddings()
 if process_url_clicked:
     # load data
     loader = UnstructuredURLLoader(urls=urls)
-    main_placeholder.text("Data Loading...Started...✅✅git ")
+    main_placeholder.text("Data Loading...Started...✅✅✅")
     data = loader.load()
     # split data
     text_splitter = RecursiveCharacterTextSplitter(
@@ -42,10 +42,10 @@ if process_url_clicked:
         chunk_size=1000,
         chunk_overlap=200
     )
-    main_placeholder.text("Text Splitter...Started...✅✅")
+    main_placeholder.text("Text Splitter...Started...✅✅✅")
     docs = text_splitter.split_documents(data)
     vectorstore_openai = FAISS.from_documents(docs, embeddings)
-    main_placeholder.text("Embedding Vector Started Building...✅✅")
+    main_placeholder.text("Embedding Vector Started Building...✅✅✅")
     # time.sleep(2)
 
     # Storing vector index create in local
