@@ -13,8 +13,8 @@ from dotenv import load_dotenv
 # Load secrets from Streamlit environment
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-st.title("News Research Tool 💡")
-st.sidebar.title("News Article URLs")
+st.title("Multi-Article Summarization and Q&A Tool 💡")
+st.sidebar.title("Article URLs")
 
 urls = []
 for i in range(3):
